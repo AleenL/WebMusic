@@ -1,0 +1,26 @@
+*{padding:0;margin:0;border:0;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{font: normal 16px Helvetica, Arial, sans-serif;height:100vh;width:100%;}
+header{height:10%;background-color:#223;position: relative;}
+header>nav{
+	height:100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 256161 */
+  src: url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.eot');
+  src: url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  /*这样设定的话就会使得所有有class=iconfont的标签的样式改变，所以如果还有些地方需要图标样式发生更改的话，记得要在.iconfont之前加具体的路径*/
+  font-style: normal;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
