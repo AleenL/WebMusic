@@ -1,26 +1,147 @@
-*{padding:0;margin:0;border:0;}
-a{text-decoration: none;}
-li{list-style: none;}
-body{font: normal 16px Helvetica, Arial, sans-serif;height:100vh;width:100%;}
-header{height:10%;background-color:#223;position: relative;}
-header>nav{
-	height:100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+main{
+height:80%;
+overflow: hidden;
+background: url(timg.jpg) no-repeat ;
+background-size:cover;
+position: relative;
 }
-@font-face {
-  font-family: 'iconfont';  /* project id 256161 */
-  src: url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.eot');
-  src: url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_f349wqye7nj3jtt9.svg#iconfont') format('svg');
+main .Img-blur{
+height:120%;
+width:120%;
+margin-top: -5%;
+margin-left: -5%;
+background: url(timg.jpg) no-repeat ;
+background-size:cover;
+filter: blur(10px) brightness(30%)
 }
-.iconfont {
-  font-family: "iconfont" !important;
-  /*这样设定的话就会使得所有有class=iconfont的标签的样式改变，所以如果还有些地方需要图标样式发生更改的话，记得要在.iconfont之前加具体的路径*/
-  font-style: normal;
-  color: rgba(255,255,255,0.8);
-  cursor: pointer;
+main section .Cover{
+width: 38vh;
+height: 38vh;
+z-index: 2;
+border-radius: 28vh;
+background-color: rgba(255,255,255,0.15);
+top: 6vh;
+left: 50%;
+margin-left: -19vh;
+position: absolute;
+
+}
+main section .Set-Cover{
+width: 36vh;
+height: 36vh;
+z-index: 3;
+border-radius: 36vh;
+background: url("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2033981058,3643397326&fm=23&gp=0.jpg") 0 0 no-repeat;
+background-size: auto 100%;
+transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+animation: play 10s linear infinite;
+-webkit-animation: play 10s linear infinite;
+position: absolute;
+top: 1vh;
+left: 50%;
+margin-left: -18vh;
+}
+main section h2{
+position: absolute;
+text-align: center;
+z-index: 60;
+left: 50%;
+top: 65vh;
+width:80%;
+margin-left: -40%;
+font-size: 1.2rem;
+color: rgba(244,244,244,0.8);
+}
+main section h3{
+position: absolute;
+text-align: center;
+color: rgba(244,244,244,0.8);
+z-index: 60;
+left: 50%;
+top: 69vh;
+width:80%;
+margin-left: -40%;
+font-size: 1.0rem;
+}
+main section .sings{
+background-color: rgb(34,34,51);
+position: absolute;
+top:100%;
+width: 105%;
+height: 50%;
+z-index: 999;
+overflow-y: auto;
+overflow-x: hidden;
+}
+main section .sings li{
+width: 100%;
+height: 20%;
+border-bottom: 1px solid white;
+text-overflow: ellipsis;
+white-space: nowrap; 
+overflow: hidden;
+
+}
+main section .sings li p{
+margin-left: 5%;
+width: 80%;
+font-size: 1.3rem;
+color: white;
+float: left;
+line-height: 3rem;
+
+}
+main section .sings li p span{
+font-size: 1rem;
+color: rgba(255,255,255,0.4);
+line-height: 2rem;
+
+}
+main section .sings li p i{
+margin-left: 2%;
+font-size: 1rem;
+}
+main .Set-volume{
+height: 7%;
+background-color: #223;
+position: absolute;
+z-index: 10;
+top:100%;
+width: 100%;
+}
+main .Set-volume .Volume{
+float: right;
+margin-top: 2.8vh;
+margin-right:18.1%;
+width: 63.6%;
+height: 0.28em;
+border-radius: 0.48rem;
+background-color: rgba(244,244,244,0.7);
+cursor: pointer;
+}
+main .Set-volume .Volume .volume-now{
+background-color:#1ABC9C;
+border-radius: 0.48rem;
+height: 0.28em;
+width:30%;
+position: relative;
+}
+main .Set-volume .Volume .volume-now::before{
+content: ' ';
+display: block;
+clear: both;
+width: 0.8rem;
+height: 0.8rem;
+border-radius: 0.8rem;
+top: -0.32rem;
+left: 99%;
+position: absolute;
+background-color: #1ABC9C;
+}
+main .volume-btn{
+float: left;
+font-size: 1.2rem;
+margin-left:8%;
+margin-top:1.6vh; 
 }

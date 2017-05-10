@@ -1,10 +1,12 @@
 import React from 'react';
-import $ from 'jquery';
 import ReactDOM from 'react-dom';
-import main from './main';
+import Header from './test';
+import Main from './main'
 import './index.css';
+import './test.css'
 
 ReactDOM.render(
-  <main/>,
-  $('body')
+
+  <Main />,
+  document.getElementById('root')
 );
